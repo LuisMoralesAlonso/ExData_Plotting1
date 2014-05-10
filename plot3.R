@@ -7,7 +7,7 @@ lines(as.POSIXlt(elec$DateTime),elec$Sub_metering_2, type="l", xact="n", xlab=""
 lines(as.POSIXlt(elec$DateTime),elec$Sub_metering_3, type="l", xact="n", xlab="", col="blue")
 
 ## Add legend
-legend("topright", lty=1, col = c("black","blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty=1, col = c("black","blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.6)
 
 ## Save to a png file in figure subdirectory
 dev.copy(png, file = "./figure/plot3.png", width = 480, height = 480)
